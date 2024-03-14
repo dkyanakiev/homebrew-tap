@@ -5,11 +5,11 @@
 class Vaul7y < Formula
   desc "A simple terminal application/TUI for interacting with HashiCorp Vault."
   homepage "https://github.com/dkyanakiev/vaul7y"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
-    url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.2/vaul7y_0.1.2_Darwin_all.tar.gz"
-    sha256 "5ab75fa0894f5430d6121f60150203972f0e47e684b163b79361650f3df83b93"
+    url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.3/vaul7y_0.1.3_Darwin_all.tar.gz"
+    sha256 "dcd2ce7e071abb5ed0492b9871289cdff4c09e58435cb4fb6242d99119ae0c20"
 
     def install
       bin.install "vaul7y"
@@ -18,16 +18,16 @@ class Vaul7y < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.2/vaul7y_0.1.2_Linux_arm64.tar.gz"
-      sha256 "64b1eedf18dc18ef53782a121eeb4e14fb816008b9a91026e8ba62c25eb0b90f"
+      url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.3/vaul7y_0.1.3_Linux_arm64.tar.gz"
+      sha256 "d41aa022f8cd538291b2d11343e5489c9ff5720cb749bc860880ca33fd7d2ad2"
 
       def install
         bin.install "vaul7y"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.2/vaul7y_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "86a378d6711ed5759e2db08f4583be9739480c5948dbba40fd28d443202e1e58"
+      url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.3/vaul7y_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "84392184cd2f9be0f113f33d41b373c2e3b140c533df6bf09164e7af5eef3866"
 
       def install
         bin.install "vaul7y"
