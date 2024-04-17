@@ -9,7 +9,7 @@ class Vaul7y < Formula
 
   on_macos do
     url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.4/vaul7y_0.1.4_Darwin_all.tar.gz"
-    sha256 "576aa16359425d9fd14940ccd9ea11a7e21dc1001a0395ce25b3a7aa0c6e350a"
+    sha256 "a6bc885ca137ecfca4bb67f6456f653ef832f1ff605d79931e225a30357ef50b"
 
     def install
       bin.install "vaul7y"
@@ -19,7 +19,7 @@ class Vaul7y < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.4/vaul7y_0.1.4_Linux_arm64.tar.gz"
-      sha256 "340e8cc494f7e271dbb7b0f6d7949e30d8c39e67187c94d14238b9338c9fde5d"
+      sha256 "e45b0009eab25212f7236d4eae1889b121cb5cc85e97fa8c6853f850e6b722e7"
 
       def install
         bin.install "vaul7y"
@@ -27,7 +27,7 @@ class Vaul7y < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/dkyanakiev/vaul7y/releases/download/v0.1.4/vaul7y_0.1.4_Linux_x86_64.tar.gz"
-      sha256 "e6d014a0dfc1ffa9f3887ab07dc9cd383f7980cb465adea13a43ae897171a994"
+      sha256 "d84c8e6caad4d488ae5d80bb67f9cda36767fb55c17ca4767197994c0e957320"
 
       def install
         bin.install "vaul7y"
